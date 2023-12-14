@@ -27,8 +27,7 @@
 
 # 📖 [rails_webpack_app] <a name="about-project"></a>
 
-**[rails_webpack_app]** is a "Hello world" project created as one app with Rails and Webpack.
-
+**[rails_webpack_app]** is crate
 
 
 ## 🛠 Built With <a name="built-with"></a>
