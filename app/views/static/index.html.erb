@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hello Rails React</title>
+</head>
+<body>
+  <h1>Welcome to my Rails and React App!</h1>
+  <div id="root"></div>
+  <h2>Random Greeting:</h2>
+  <p><%= @random_greeting %></p>
+  <script>
+    import App from '../components/App';
+    ReactDOM.render(<App />, document.getElementById('root'));
+  </script>
+</body>
+</html>
