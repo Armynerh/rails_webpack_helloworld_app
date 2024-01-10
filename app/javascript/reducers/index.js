@@ -1,20 +1,10 @@
-// app/javascript/reducers/index.js
-import { combineReducers } from 'redux';
+import { configureStore } from '@reduxjs/toolkit';
+import GreetingReducer from './reducers/GreetingSlice';
 
-const greetingReducer = (state = '', action) => {
-  switch (action.type) {
-    case 'SET_GREETING':
-      return action.payload;
-    default:
-      return state;
-  }
-};
-
-export const setGreeting = (greeting) => ({
-  type: 'SET_GREETING',
-  payload: greeting,
+const store = configureStore({
+  reducer: {
+    greeting: GreetingReducer,
+  },
 });
 
-export default combineReducers({
-  greeting: greetingReducer,
-});
+export default store;
